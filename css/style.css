@@ -1,0 +1,214 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#FF689D;
+}
+
+body {
+   background: #f2f2f2;
+   text-align: center;
+}
+
+/* Global */  /*tamaño de la ´pagian web ancho*/
+.contenedor{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.boton1{
+  height:38px;
+  background:#C82A54;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.oscuro{
+  padding:15px;
+  background:#222222;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Encabezados **/
+header{
+  background:#C82A54;
+  color:#FFFFFF;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#FFFFFF;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:20px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca{
+  float:left;
+}
+
+header #marca h1{
+  margin:0;
+}
+
+header nav{        /*menu posiscion*/
+  float:right;
+  margin-top:10px;
+}
+
+header .reflejo, header .actual a{  /*menu color pasando el cursor*/
+  color:#E7D40A;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#6DC36D;
+  font-weight:bold;
+}
+
+/* Vitrinas */
+#vitrina{
+  min-height:40px;
+  background:url('../img/ima1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#FF0000;
+}
+
+#vitrina h1{
+  margin-top:90px;
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+#vitrina p{
+  font-size:20px;
+  font-weight:bold;
+  color:#0019ff;
+}
+
+/* Boletines */
+#boletin{
+  padding:15px;
+  color:#222222;
+  background:#E69DFB
+}
+
+#boletin h1{
+  float:left;
+}
+
+#boletin form {
+  float:right;
+  margin-top:15px;
+}
+
+#boletin input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Cajas */
+#cajas{
+  margin-top:20px;
+}
+
+#cajas .caja{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#cajas .caja img{   /*caja cabecera de conocenos*/
+  width:90px;
+}
+
+/* Barra lateral */
+aside#barra{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#barra .cita input, aside#barra .cita textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* columna-principal*/
+article#columna-principal{
+  float:left;
+  width:65%;
+}
+
+/* Servicios */
+ul#servicios li{
+  list-style: none;
+  padding:50px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#222222;
+  background-color:#23bac4;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #marca,
+  header nav,
+  header nav li,
+  #boletin h1,
+  #boletin form,
+  #cajas .caja,
+  article#columna-principal,
+  aside#barra{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #vitrina h1{
+    margin-top:40px;
+  }
+
+  #boletin button, .cita button{
+    display:block;
+    width:100%;
+  }
+
+  #boletin form input[type="email"], .cita input, .cita textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
